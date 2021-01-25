@@ -37,7 +37,6 @@ open abstract class BaseMvvmFragment<VM : ViewModel, VDB : ViewDataBinding> : Fr
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        mViewModel = ViewModelProvider(this).get(getClass(this))
         initView()
         initData()
     }
